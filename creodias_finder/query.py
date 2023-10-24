@@ -85,8 +85,8 @@ def _build_query(
     if geometry is not None:
         query_params["geometry"] = _parse_geometry(geometry)
 
-    if status is not None:
-        query_params["status"] = status
+    # if status is not None:
+    #     query_params["status"] = status
 
     for attr, value in sorted(kwargs.items()):
         value = _parse_argvalue(value)
